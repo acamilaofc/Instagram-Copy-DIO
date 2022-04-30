@@ -1,0 +1,90 @@
+body {
+  background-color: #f3f3f3;
+  justify-content: center;
+}
+
+p {
+  color: #a0a0a0;
+}
+
+a {
+  color: #0095f6;
+}
+
+.main-block {
+  width: calc(var(--blockDivSize) * 2 + 30px);
+  height: 550px;
+  margin: 30px;
+  justify-content: center;
+}
+
+.phone-block,
+.login-block {
+  width: var(--blockDivSize);
+  justify-content: center;
+}
+
+.login-block,
+.login-block > div,
+.login-block > div * {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-continue,
+.swap-account {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 20px;
+}
+.login-continue,
+.swap-account,
+.get-app {
+  width: 100%;
+}
+
+.profile-picture {
+  width: 100px;
+  margin: 20px;
+}
+
+.logo-picture {
+  width: 90%;
+}
+
+.get-app {
+  margin-top: 15px;
+}
+
+.get-app > div {
+  flex-direction: row;
+  padding: 10px;
+}
+
+.get-app > div > img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.get-app > div > img:hover {
+  cursor: pointer;
+}
+
+.get-app > div * {
+  width: 125px;
+  margin: 5px 0 60px 0;
+}
+
+.continue-button {
+  padding: 6px;
+  margin: 6px;
+  border-radius: 5px;
+  background-color: #0095f6;
+  color: #f3f3f3;
+}
+
+@media (max-width: 800px) {
+  .phone-block {
+    display: none;
+  }
+} ;
